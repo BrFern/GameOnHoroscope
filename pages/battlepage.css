@@ -1,0 +1,50 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("https://wallpapercave.com/wp/wp2741879.jpg");
+    width: 100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 400px;
+    padding: 50px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.dice-wrapper {
+    width: 90%; 
+    display: flex;
+    justify-content: space-around;
+}
+
+p {
+    font-size: 16 px;
+    margin: 30px 0;
+    color:aliceblue;
+    font-weight: 500;
+}
+
+/* Figure out what's going on here with styling and such.  */
+
+button{
+    width: 150px;
+    height: 40px;
+    margin: 20px;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;    
+}
