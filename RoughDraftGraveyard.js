@@ -14,3 +14,18 @@
         // test.setAttribute("src", images[dieOneValue])
         // console.log(images[dieOneValue])
         // console.log(images[1])
+
+        
+//     <!-- <table>
+//     <thead></thead>
+//     <tbody>
+   
+//     <th colspan ="3"> Capricorn (December 22nd-January 19th) </th> 
+//        <tr>  <img src= "../images/horoscope/Capricorn.png"> </tr>
+//     <tr><th> Aquarius (January 20th-February 18th)</th></tr>
+
+
+//     </tbody>
+
+    
+// </table>         -->

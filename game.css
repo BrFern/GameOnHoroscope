@@ -1,15 +1,26 @@
+
+h1 {
+    color:aliceblue;
+
+}
+
 body {
     background-image: url("https://wallpapercave.com/wp/wp2741879.jpg");
 }
 
 .title {
     color:aliceblue;
-    position: center;
+    text-align: center;
 }
 
 *{
     margin: 0;
     padding:0;
 }
+.d-flex flex-row mb-3 {
+    color: aliceblue
+}
+
+
 
 
