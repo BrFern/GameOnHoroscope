@@ -31,7 +31,7 @@ function roll(){
     function compareDice (dieOneValue, dieTwoValue) {
         
         if (dieOneValue > dieTwoValue) {
-             console.log(`Player One has won the dice roll!`);
+             
         } else if (dieOneValue < dieTwoValue) {
             console.log(`Computer has won the dice roll!`);
         } 
@@ -40,10 +40,16 @@ function roll(){
     
         
     }
+
+    // return document.getElementById(compareDice).innerHTML = "Player one has won the dice roll!"
     
-    console.log(compareDice(dieOneValue, dieTwoValue))
-     
-        document.querySelector("#die-2").setAttribute("src", images[dieTwoValue])
+    document.getElementById(compareDice(dieOneValue,dieTwoValue)).innerHTML= "Roll again!"
+
+    //console.log(compareDice(dieOneValue, dieTwoValue))
+
+    document.querySelector("#die-1").setAttribute("src", images[dieOneValue])
+    document.querySelector("#die-2").setAttribute("src", images[dieTwoValue])
+    document.querySelector("#winner").innerHTML ='<'
     },
     1000
     );
