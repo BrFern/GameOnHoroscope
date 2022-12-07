@@ -1,3 +1,7 @@
+//document.body.innerHTML=("<button OnClick =" "location.href = '../pages/battlepage.html' ">" Return to battle!"  "</button>")
+
+
+
 //  <img src = "../images/diceroller/dice3.png" id = "die 3">
 {/* <img src = "../images/diceroller/dice4.png" id = "die-4">
 <img src = "../images/diceroller/dice5.png" id = "die-5">

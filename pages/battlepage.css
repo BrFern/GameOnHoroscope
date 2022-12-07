@@ -15,6 +15,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+   
 }
 
 h1 {
@@ -36,6 +37,8 @@ h1 {
     width: 90%; 
     display: flex;
     justify-content: space-around;
+    color: aliceblue;
+    
 }
 
 p {
@@ -48,17 +51,31 @@ p {
 /* Figure out what's going on here with styling and such.  */
 
 .return-buttons {
-    
+    display: flex;
+    align-items: center;
 }
-button{
-    width: 150px;
-    height: 75px;
-    margin: 20px;
-    font-size: 1.2rem;
+button {
+    flex: 1 1 auto;
+    margin: 10px;
+    padding: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color:aliceblue;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 700; 
-     
+    background-color:#7D5DA2;
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em transparent;
+    background-image: linear-gradient(to right, #5a52c5 0%, #1a1263 51%, #7a72e2 100%);
 }
+
+button:hover{
+    background-position: right center;
+}
+
 
 .shake {
     animation: shake 0.5s infinite;  

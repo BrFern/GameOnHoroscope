@@ -1,5 +1,6 @@
 
 
+
 let images = ["../../images/diceroller/dice1.png",
 "../../images/diceroller/dice2.png",
 "../../images/diceroller/dice3.png", 
@@ -28,28 +29,25 @@ function roll(){
         let dieTwoValue = Math.floor(Math.random() * 6); 
         // console.log(dieOneValue, dieTwoValue)
 
-    function compareDice (dieOneValue, dieTwoValue) {
+    // function compareDice (dieOneValue, dieTwoValue) {
         
-        if (dieOneValue > dieTwoValue) {
-             
-        } else if (dieOneValue < dieTwoValue) {
-            console.log(`Computer has won the dice roll!`);
-        } 
-        // else (dieOneValue === dieTwoValue) 
-        //     console.log(`It's a tie! Re-roll!`);
-    
+    //     if (dieOneValue > dieTwoValue) {
+    //          console.log(`Player one has won the dice roll!`)
+    //     } else if (dieOneValue < dieTwoValue) {
+    //         console.log(`Computer has won the dice roll!`);
+    //     } 
+    //     else if (dieOneValue === dieTwoValue) 
+    //         console.log(`It's a tie! Re-roll!`);
         
-    }
+    // }
 
-    // return document.getElementById(compareDice).innerHTML = "Player one has won the dice roll!"
-    
-    document.getElementById(compareDice(dieOneValue,dieTwoValue)).innerHTML= "Roll again!"
+   
 
-    //console.log(compareDice(dieOneValue, dieTwoValue))
+   console.log(compareDice(dieOneValue, dieTwoValue))
 
     document.querySelector("#die-1").setAttribute("src", images[dieOneValue])
     document.querySelector("#die-2").setAttribute("src", images[dieTwoValue])
-    document.querySelector("#winner").innerHTML ='<'
+  
     },
     1000
     );
@@ -57,4 +55,3 @@ function roll(){
 
 
 
-    
