@@ -22,38 +22,36 @@ function roll(){
             die.classList.remove("shake");
         });
 
-        //Highlight the winner/loser
-        function highlight(text) {
-            let inputText = document.getElementById("input text");
-            let innerHTML = inputText.innerHTML;
-            let index = innerHTML.indexOf(text);
-            if (index >= 0) {
-                innerHTML = innerHTML.substring(0, index) + "<span class = 'highlight'>" + 
-                innerHTML.substring(index,index + text.length) + "</span>" + innerHTML.substring(index + text.length);
-            }
-        } 
+     
 
         //Randomize the dice roll
         let dieOneValue = Math.floor(Math.random() * 6);
         let dieTwoValue = Math.floor(Math.random() * 6); 
         // console.log(dieOneValue, dieTwoValue)
 
-    function compareDice (dieOneValue, dieTwoValue) {
-        
+        function displayOutcome() {
+            let winnerDisplay = document.getElementById("roll-dice")
         if (dieOneValue > dieTwoValue) {
-             console.log(`Player one has won the dice roll!`)
-
+          winnerDisplay.innerHTML="Player one has won the dice roll!";
         } else if (dieOneValue < dieTwoValue) {
-            console.log(`Computer has won the dice roll!`);
+          winnerDisplay.innerHTML="Computer has won the dice roll!";
         } 
         else if (dieOneValue === dieTwoValue) 
-            console.log(`It's a tie! Re-roll!`);
+          winnerDisplay.innerHTML="It's a tie! Re-roll!";
+        }
+
+        displayOutcome()
+        // if (dieOneValue > dieTwoValue) {
+        //   console.log(`Player one has won the dice roll!`);
+        // } else if (dieOneValue < dieTwoValue) {
+        //   console.log(`Computer has won the dice roll!`);
+        // } 
+        // else if (dieOneValue === dieTwoValue) 
+        //   console.log(`It's a tie! Re-roll!`);
         
-    }
+    
 
    
-
-   console.log(compareDice(dieOneValue, dieTwoValue))
 
     document.querySelector("#die-1").setAttribute("src", images[dieOneValue])
     document.querySelector("#die-2").setAttribute("src", images[dieTwoValue])

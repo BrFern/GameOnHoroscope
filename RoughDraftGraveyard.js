@@ -1,3 +1,48 @@
+// <!-- <script>
+// function compareDice (dieOneValue, dieTwoValue) {
+
+// if (dieOneValue > dieTwoValue) {
+//  document.body.innerHTML=("Player one has won the dice roll!");
+
+ 
+// } else if (dieOneValue < dieTwoValue) {
+// document.body.innerHTML=(`Computer has won the dice roll!`);
+// } 
+// else if (dieOneValue === dieTwoValue) 
+// document.body.innerHTML=(`It's a tie! Re-roll!`);
+
+// }
+// compareDice(dieOneValue, dieTwoValue)
+// </script> -->
+
+// <!-- <script>
+// function displayOutcome() {
+// let old = console.log;
+// let logger = document.getElementById('log');
+// console.log = function(message) {
+// if(typeofmessage === 'object') {
+// logger.innerHTML += (JSON && JSON.stringify ? JSON.stringify)
+// } else {
+// logger.innerHTML += message + '';
+// }
+// }
+// }
+
+// displayOutcome()
+
+// </script> -->
+  
+  //Highlight the winner/loser
+        // function highlight(text) {
+        //     let inputText = document.getElementById("input text");
+        //     let innerHTML = inputText.innerHTML;
+        //     let index = innerHTML.indexOf(text);
+        //     if (index >= 0) {
+        //         innerHTML = innerHTML.substring(0, index) + "<span class = 'highlight'>" + 
+        //         innerHTML.substring(index,index + text.length) + "</span>" + innerHTML.substring(index + text.length);
+        //     }
+        // } 
+
 //document.body.innerHTML=("<button OnClick =" "location.href = '../pages/battlepage.html' ">" Return to battle!"  "</button>")
 
 //This can be used to get it to another page, but wanted to try and see about getting it displayed on the same page

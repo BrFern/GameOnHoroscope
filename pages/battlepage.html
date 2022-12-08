@@ -18,30 +18,22 @@
     
       <div class="dice-wrapper">
         <h1> Player One</h1>
+        <p id = "player-one"> 
+        
+        </p>
         <img src="../images/diceroller/dice1.png" id="die-1" />
-       <!-- <script>
-        function displayOutcome() {
-          let old = console.log;
-          let logger = document.getElementById('log');
-          console.log = function(message) {
-            if(typeofmessage === 'object') {
-              logger.innerHTML += (JSON && JSON.stringify ? JSON.stringify)
-            } else {
-              logger.innerHTML += message + '';
-            }
-          }
-        }
+        
 
-        displayOutcome()
-
-       </script> -->
      
         <img src="../images/diceroller/dice2.png" id="die-2" />
         <h1> Computer </h1>
+        <p id ="computer"> 
+        
+        </p>
       </div>
-    
-      <p id="total"> Higher dice roll attacks</p>
-      <button onclick="roll()">Roll the dice!</button>
+      <button id= "roll-dice"; onclick="roll(); displayOutcome();">Roll the dice!</button>
+
+    </p>
     </div>
     
     <div id="return-buttons"> 
