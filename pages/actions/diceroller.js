@@ -49,10 +49,6 @@ function roll(){
         // else if (dieOneValue === dieTwoValue) 
         //   console.log(`It's a tie! Re-roll!`);
         
-    
-
-   
-
     document.querySelector("#die-1").setAttribute("src", images[dieOneValue])
     document.querySelector("#die-2").setAttribute("src", images[dieTwoValue])
   
