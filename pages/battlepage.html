@@ -19,21 +19,22 @@
       <div class="dice-wrapper">
         <h1> Player One</h1>
         <img src="../images/diceroller/dice1.png" id="die-1" />
-        <script>
-             function compareDice (dieOneValue, dieTwoValue) {
-        
-        if (dieOneValue > dieTwoValue) {
-             document.body.innerHTML=("Player one has won the dice roll!")
-            
-             
-        } else if (dieOneValue < dieTwoValue) {
-            document.body.innerHTML=(`Computer has won the dice roll!`);
-        } 
-        else if (dieOneValue === dieTwoValue) 
-            document.body.innerHTML=(`It's a tie! Re-roll!`);
-        
-    }
-        </script>
+       <!-- <script>
+        function displayOutcome() {
+          let old = console.log;
+          let logger = document.getElementById('log');
+          console.log = function(message) {
+            if(typeofmessage === 'object') {
+              logger.innerHTML += (JSON && JSON.stringify ? JSON.stringify)
+            } else {
+              logger.innerHTML += message + '';
+            }
+          }
+        }
+
+        displayOutcome()
+
+       </script> -->
      
         <img src="../images/diceroller/dice2.png" id="die-2" />
         <h1> Computer </h1>

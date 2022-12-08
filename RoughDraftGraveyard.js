@@ -1,6 +1,24 @@
 //document.body.innerHTML=("<button OnClick =" "location.href = '../pages/battlepage.html' ">" Return to battle!"  "</button>")
 
+//This can be used to get it to another page, but wanted to try and see about getting it displayed on the same page
 
+// <script>
+//              function compareDice (dieOneValue, dieTwoValue) {
+        
+//         if (dieOneValue > dieTwoValue) {
+//               document.body.innerHTML=("Player one has won the dice roll!");
+//               document.dice-wrapper.innerHTML(compareDice(dieOneValue,dieTwoValue));
+//               document.querySelector("#die-1").setAttribute("src", images[dieOneValue]);
+//               document.querySelector("#die-2").setAttribute("src", images[dieTwoValue]);
+              
+//         } else if (dieOneValue < dieTwoValue) {
+//             document.body.innerHTML=(`Computer has won the dice roll!`);
+//         } 
+//         else if (dieOneValue === dieTwoValue) 
+//             document.body.innerHTML=(`It's a tie! Re-roll!`);
+        
+//     }
+//         </script>
 
 //  <img src = "../images/diceroller/dice3.png" id = "die 3">
 {/* <img src = "../images/diceroller/dice4.png" id = "die-4">
