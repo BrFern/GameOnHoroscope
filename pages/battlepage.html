@@ -2,17 +2,19 @@
 <html lang="en">
   <head>
   <script src = "../horoscopeclasses.js">
-    
+    localStorage.getItem('playerChoice')
   </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BATTLEGROUNDS</title>
     <link rel="stylesheet" href="battlepage.css" />
+   
   </head>
 
 
   <body>
+  
     <div class="container">
     
       <div class="dice-wrapper">
@@ -27,20 +29,22 @@
         <img src="../images/diceroller/dice2.png" id="die-2" />
         <h1> Computer </h1>
         <p id ="computer"> 
-        
+       
         </p>
       </div>
       <button id= "roll-dice"; onclick="roll(); displayOutcome();">Roll the dice!</button>
 
     </p>
     </div>
-    
+   
     <div id="return-buttons"> 
       <button OnClick = "location.href = '../index.html'"> Return to Homepage </button>
       <button OnClick = "location.href = '../pages/characterselector.html'"> Return to Character Page </button>
     </div>
     <script src="/pages/actions/diceroller.js"></script>
   </body>
+
+  
 
 </html>
 

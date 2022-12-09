@@ -1,3 +1,44 @@
+//IMPORTANT CODE-JUST KEPT HERE WHILE MESSING AROUND
+
+function displayOutcome() {
+        let winnerDisplay = document.getElementById("roll-dice")
+    if (dieOneValue > dieTwoValue) {
+      winnerDisplay.innerHTML="Player one has won the dice roll!";
+      
+    } else if (dieOneValue < dieTwoValue) {
+      winnerDisplay.innerHTML="Computer has won the dice roll!";
+    } 
+    else if (dieOneValue === dieTwoValue) 
+      winnerDisplay.innerHTML="It's a tie! Re-roll!";
+    }
+
+    displayOutcome()
+
+
+
+// function zodiacButtons () {
+// const zodiacButtons = document.querySelectorAll('.horoscope')
+// for(let i = 0; i < zodiacBtnArray.length; i++){
+//     button.addEventListener('click', (event) => {
+
+//     })
+
+// }
+// }
+// button.addEventListner('click', (event) => { }) //Added 
+// const zodiacButtons = document.querySelectorAll('.horoscope') //Added
+
+
+// for(const button of zodiacButton){} 
+// button.addEventListner('click', (event) => { })
+// localStorage.setItem('playerChoice', button.id)
+// localStorage.getItem('playerChoice');
+
+
+// const button of zodiacButton
+
+//<!-- <button OnClick = "location.href = '../pages/battlepage.html'"> To Battle! </button> -->
+
 // <!-- <script>
 // function compareDice (dieOneValue, dieTwoValue) {
 

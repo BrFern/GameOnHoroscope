@@ -52,8 +52,9 @@ p {
 /* Figure out what's going on here with styling and such.  */
 
 .return-buttons {
-    display: flex;
+    display: grid;
     align-items: center;
+    
 }
 button {
     flex: 1 1 auto;
