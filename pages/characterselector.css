@@ -1,10 +1,12 @@
 
 body {
     background-image: url("https://wallpapercave.com/wp/wp2741879.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     display: grid;
     align-content: center;
     color:aliceblue;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     
 
@@ -12,6 +14,7 @@ body {
 
 #select {
     display: flex;
+    place-items: center;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
@@ -28,7 +31,7 @@ body {
     height: 300px;
     align-content: center;
     text-align: center;
-    border: 1px white
+    
 }
 
 

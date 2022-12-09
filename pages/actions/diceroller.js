@@ -1,6 +1,4 @@
 
-
-
 let images = ["../../images/diceroller/dice1.png",
 "../../images/diceroller/dice2.png",
 "../../images/diceroller/dice3.png", 
@@ -35,12 +33,11 @@ function roll(){
             let subtractPlayerHealth = document.getElementById("player-one")
         if (dieOneValue > dieTwoValue) {
           winnerDisplay.innerHTML="Player one has won the dice roll!";
-          subtractCompHealth.innerHTML = (computer.hitpoints - 1)
+          // subtractCompHealth.innerHTML = (computer.health- 1)
         } else if (dieOneValue < dieTwoValue) {
           winnerDisplay.innerHTML="Computer has won the dice roll!";
-          subtractPlayerHealth.innerHTML = (playerOne.hitpoints - 1)
-        } 
-        else if (dieOneValue === dieTwoValue) 
+          // subtractPlayerHealth.innerHTML = (player.health - 1)
+         } else if (dieOneValue === dieTwoValue) 
           winnerDisplay.innerHTML="It's a tie! Re-roll!";
 
         }
@@ -57,9 +54,8 @@ function roll(){
 }
 
 //Game Loop
-// function gameLoop(playerOne.hitpoints) {
-//   while (playerOne.hitpoints > 0)
-//     if ()
-// }
-
+function gameLoop(player.health, computer.health) {
+  while(player.health > 0 && computer.health > 0)
+    
+}
 

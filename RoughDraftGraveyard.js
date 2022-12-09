@@ -1,3 +1,114 @@
+//Buttons Horoscope
+<div class = "horoscope">
+<button id ="ho-1" onClick = "location.href = '../pages/battlepage.html?s=capricorn'"> Capricorn </button>
+<p> December 22nd-January 19th</p>
+<img src ="../images/horoscope/Capricorn.png">
+</div>
+<div class = "horoscope">
+<button id= "ho-2" onClick = "location.href = '../pages/battlepage.html?s=aquarius'"> Aquarius </button>
+<p> January 20th-February 18th </p>
+<img src="../images/horoscope/Aquarius.png">
+</div>
+<div class = "horoscope">
+<button id = "ho-3" onClick = "location.href = '../pages/battlepage.html?s=pisces'"> Pisces </button>
+<p> February 19th-March 20th </p>
+<img src="../images/horoscope/Pisces.png">
+</div>
+<div class = "horoscope">
+<button id="ho-4" onClick = "location.href = '../pages/battlepage.html?s=aries'"> Aries </button>
+<p> March 21st-April 19th </p>
+<img src="../images/horoscope/Aries.png">
+</div>
+<div class = "horoscope">
+<button id= "ho-5" onClick = "location.href = '../pages/battlepage.html?s=taurus'"> Taurus </button>
+<p> April 20th-May 20th </p>
+<img src="../images/horoscope/Taurus.png">
+</div>
+<div class = "horoscope">
+<button id="ho-6" onClick = "location.href = '../pages/battlepage.html?s=gemini'"> Gemini </button>
+<p> May 21st-June 20th </p>
+<img src="../images/horoscope/Gemini.png">
+</div>
+<div class = "horoscope">
+<button id= "ho-7" onClick = "location.href = '../pages/battlepage.html?s=cancer'"> Cancer </button>
+<p> June 21st-July 22nd </p>
+<img src="../images/horoscope/Cancer.png">
+</div>
+<div class = "horoscope">
+<button id="ho-8" onClick = "location.href = '../pages/battlepage.html?s=leo'"> Leo </button>
+<p> July 23rd- August 22nd</p>
+<img src="../images/horoscope/Leo.png">
+</div>
+<div class = "horoscope">
+<button id="ho-9" onClick = "location.href = '../pages/battlepage.html?s=virgo'"> Virgo </button>
+<p> August 23rd-September 22nd </p>
+<img src="../images/horoscope/Virgo.png">
+</div>
+<div class = "horoscope">
+<button id="ho-10" onClick = "location.href = '../pages/battlepage.html?s=libra'"> Libra </button>
+<p> September 23rd-October 22nd </p>
+<img src="../images/horoscope/Libra.png">
+</div>
+<div class = "horoscope">
+<button id="ho-11" onClick = "location.href = '../pages/battlepage.html?s=scorpio'"> Scorpio </button>
+<p> October 23rd-November 21st </p>
+<img src="../images/horoscope/Scorpio.png">
+</div>
+<div class = "horoscope">
+<button id="ho-12" onClick = "location.href = '../pages/battlepage.html?s=sagittarius'"> Sagittarius </button>
+<p> November 22nd-December 21st </p>
+<img src="../images/horoscope/Sagittarius.png">
+</div>
+</div>
+
+
+//May still be useful, kept here just in case
+const urlParams = new URLSearchParams (window.location.search);
+
+//console.log(urlParams.get("gemini"))
+
+if (urlParams.get("gemini")) {console.log("Sup")}
+
+switch (urlParams.get("gemini")) {
+    case 1: 
+        user = capricorn
+        break;
+    case 2:
+        user = aquarius
+        break;
+    case 3:
+        user = pisces
+        break
+    case 4: 
+        user = aries
+        break;
+    case 5:
+         user = taurus
+         break;
+    case 6:
+        console.log("Hello")
+        user = gemini
+        break;
+    case 7:
+        user = cancer
+        break;
+    case 8:
+        user = leo
+        break;
+    case 9:
+        user = virgo
+        break;
+    case 10:
+        user = libra
+        break;
+    case 11:
+        user = scorpio
+        break;
+    case 12:
+        user = sagittarius
+        break; 
+}
+
 //IMPORTANT CODE-JUST KEPT HERE WHILE MESSING AROUND
 
 function displayOutcome() {
